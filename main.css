@@ -8,12 +8,13 @@ body {
   display: grid;
   /* background: #e3eff3; */
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto);
   grid-template-areas:
     'hd hd hd hd '
     'main main main main'
     'main1 main1 main1 main1'
-    'main2 main2 main3 main3'
+    'main2 main2 main2 main2'
+    'main3 main3 main4 main4'
     'footer footer footer footer';
   /* background: url(./images/tree.jpeg) no-repeat center center fixed;
     background-image: cover; */
@@ -78,7 +79,6 @@ nav {
   position: sticky;
   top: 0;
   right: 0;
-  
 }
 
 .menu-ul {
@@ -101,9 +101,6 @@ a {
   font-size: 20px;
 }
 
-i {
-  font-size: 2em;
-}
 
 
 .bio {
@@ -120,9 +117,8 @@ p {
   color: black;
 }
 
-.projects {
+#projects {
   display: grid;
-  grid-template-columns: 50% 50%; 
 }
 
 .feature-project {
@@ -131,27 +127,40 @@ p {
   grid-column: 1/5;
   grid-row: 1;
 }
+
 .project2 {
-  /* display: grid; */
-  grid-area: main2;
-  grid-column: 1;
-  grid-row: 2;
+  display: flex;
+  grid-column: 1/5;
+  border: 1px solid red;
+  padding: 6px;
+  margin: 6px;
+}
+
+.project2-img {
+  grid-area: main3;
+  align-self: center;
   
+}
+
+.project2-text {
+  grid-area: main4;
+  align-self: center;
+  
+
+
 }
 
 .project3 {
-  /* display: grid; */
   grid-area: main3;
-  grid-column: 2;
-  grid-row: 2;
-  
+  grid-column: 3/5;
+  grid-row: 4/5;
 }
 
-.projects > img,
+#projects > img,
 h2,
 p {
-  align-self: center;
-  justify-self: center;
+  /* align-self: center;
+  justify-self: center; */
 }
 
 h4 {
@@ -179,7 +188,7 @@ h2 {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 footer {
