@@ -1,0 +1,72 @@
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'hd'
+      'main'
+      'main'
+      'footer';
+    font-family: 'Exo', sans-serif;
+    margin: auto;
+    background: #e3eff3;
+    
+  }
+
+  h1 {
+    font-size: 125%;
+  }
+
+  h3 {
+    font-size: 85%;
+  }
+
+  h2 {
+    font-size: 100%;
+  }
+
+  p {
+    font-size: 95%;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hamburger {
+    display: grid;
+    grid-area: hd;
+    align-self: center;
+    justify-self: center;
+    width: 48px;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 2px;
+    /* padding: 5px 10px; */
+    margin: 15px 15px;
+  }
+
+  .line {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 45px;
+    height: 3px;
+    margin-right: 25px 0;
+    background-color: white;
+  }
+
+  .name-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  #bio {
+    max-width: 750px;
+  }
+}

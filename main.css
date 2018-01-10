@@ -4,8 +4,9 @@ body {
 }
 
 .wrapper {
+  font-family: 'Exo', sans-serif;
   display: grid;
-  background: #e3eff3;
+  /* background: #e3eff3; */
   grid-template-columns: repeat(1, auto);
   grid-template-rows: repeat(4, auto);
   grid-template-areas:
@@ -13,9 +14,12 @@ body {
     'main1 '
     'main2 '
     'footer';
-  font-family: 'Exo', sans-serif;
 }
 
+.intro {
+  /* background-image: url('./images/tree.jpeg'); */
+  
+}
 
 .hamburger {
   display: none;
@@ -27,7 +31,7 @@ body {
   padding: 10px 10px;
 }
 
-header {
+.hd {
   display: grid;
   grid-area: hd;
   background: #143a52;
@@ -44,11 +48,20 @@ h3 {
   color: white;
 }
 
+.name-title,
+.hd {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 nav {
   grid-area: hd;
   display: grid;
   align-self: center;
   justify-self: end;
+  position: sticky;
+  top: 0;
+  right: 0;
 }
 
 .menu-ul {
@@ -97,9 +110,24 @@ p {
   justify-self: center;
 }
 
-p {
-  padding: 5px 25px 15px;
+h4 {
+  justify-self: start;
+  padding: 0 0 5px 25px;
   margin: 0;
+}
+p {
+  padding: 0px 25px 0;
+  margin: 0;
+  line-height: 1.5;
+  /* font-family: 'Roboto', serif;
+  font-weight: thin; */
+  font-size: 15px;
+  justify-self: start;
+}
+span {
+  font-weight: bold;
+  /* font-family: 'Roboto', serif; */
+  font-size: 15px;
 }
 
 h2 {
@@ -115,55 +143,4 @@ footer {
   grid-area: footer;
   align-self: center;
   justify-self: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      'hd'
-      'main'
-      'main'
-      'footer';
-    font-family: 'Exo', sans-serif;
-    margin: auto;
-    background: #e3eff3;
-  }
-
-  ul > li {
-    display: none;
-  }
-  .hamburger {
-    display: grid;
-    grid-area: hd;
-    align-self: center;
-    justify-self: center;
-    width: 48px;
-    height: 42px;
-    border: 1px solid white;
-    border-radius: 2px;
-    padding: 5px 10px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-  }
-
-   .line {
-    display: grid;
-    align-self: center;
-    justify-self: center;
-    width: 45px;
-    height: 3px;
-    margin-right: 25px 0;
-    background-color: white;
-    
-  } 
-
-
-  .name-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
