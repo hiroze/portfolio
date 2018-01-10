@@ -6,9 +6,9 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link href="https://fonts.googleapis.com/css?family=Exo|Roboto" rel="stylesheet">
-
   <link rel='stylesheet' type='text/css' href='main.css'>
   <link rel='stylesheet' type='text/css' href='media.css'>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.3/js/all.js"></script>
   <title>firoz</title>
 </head>
 
@@ -19,7 +19,7 @@
         <h1>Firoz Kamdar</h1>
         <h3>Frontend Engineer</h3>
       </div>
-    </div>
+    
     <nav class='nav-menu'>
       <ul class='menu-ul hidden'>
         <li>
@@ -31,18 +31,28 @@
         <li>
           <a href=''>Contact</a>
         </li>
-        <ul class='contact-submenu hidden'>
-          <li>
-            <a href='mailto:firozkamdar@gmail.com'>Email</a>
-          </li>
-          <li>
-            <a href='https://www.linkedin.com/in/firozkamdar/'>LinkedIn</a>
-          </li>
-          <li>
-            <a href='https://github.com/hiroze'>GitHub</a>
-          </li>
-        </ul>
       </ul>
+
+      <!-- <div class='contact'> -->
+      <ul class='contact hidden'>
+        <li>
+          <a href='mailto:firozkamdar@gmail.com'>
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href='https://github.com/hiroze'>
+            <i class="fab fa-github"></i>
+          </a>
+
+        </li>
+        <li>
+          <a href='https://www.linkedin.com/in/firozkamdar/'>
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- </div> -->
       <div>
         <div class='hamburger '>
           <div class='line'></div>
@@ -51,60 +61,68 @@
         </div>
       </div>
     </nav>
+  </div>
+
     <main class='container'>
-      <div class='intro'><h2>Intro</h2>
-      <p>My name is Firoz (fee-rose) and I'm a Frontend developer located in Anaheim, CA. I enjoy learning new things by speaking
-        with people and by breaking and rebuilding things.</p>
+      <div class='intro'>
+        <h2>Intro</h2>
+        <p>My name is Firoz (fee-rose) and I'm a Frontend developer located in Anaheim, CA. I enjoy learning new things by speaking
+          with people and by breaking and rebuilding things.</p>
       </div>
       <div class='bio' id='bio'>
         <h2>About Me</h2>
         <p>I wanted to build applications that weren't being built, solve problems that weren't being solved and be challenged
           (and frustrated) every day. So, I left my life in investment finance and found a new home in web development. I
-          haven't been doing this very long, but can already say that it's the best decision I've ever made. I LOVE making things efficient- from simple things like teaching people keyboard short cuts to automating processes.
-        
-        Interests:Octopuses(trust me, it's not octopi), scuba diving, snow-kiting, sailing...really anything with the ocean.  If I'm not in front of the computer, I'm usually on the water.
-      </p>
+          haven't been doing this very long, but can already say that it's the best decision I've ever made. I LOVE making
+          things efficient- from simple things like teaching people keyboard short cuts to automating processes. Interests:Octopuses(trust
+          me, it's not octopi), scuba diving, snow-kiting, sailing...really anything with the ocean. If I'm not in front
+          of the computer, I'm usually on the water.
+        </p>
         <img src='https://placeimg.com/500/400/nature' alt=''>
       </div>
-      <div class='projects' id='projects'>
-        <h2>My Projects</h2>
-        <h4>Game Clone/Featured Project</h4>
-        <p>
-          <span class='heading'>Why:</span> Because games are fun!</p>
-        <p>
-          <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
-        <p>
-          <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
-          venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
-          viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat diam
-          sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
-        <img src='https://placeimg.com/500/400/arch' alt=''>
-
-
-        <h4>Project 2</h4>
-        <p>
-          <span class='heading'>Why:</span> A better quesiton: why not!?</p>
-        <p>
-          <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
-        <p>
-          <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
-          venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
-          viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat diam
-          sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
-        <img src='https://placeimg.com/500/400/animals' alt=''>
-
-        <h4>Project 3</h4>
-        <p>
-          <span class='heading'>Why:</span> Because project 3 was xyz</p>
-        <p>
-          <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
-        <p>
-          <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
-          venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
-          viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat diam
-          sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
-        <img src='https://placeimg.com/500/400/nature' alt=''>
+      <div id='projects'>
+        <div class='feature-project'>
+          <h2>My Projects</h2>
+          <h4>Game Clone/Featured Project</h4>
+          <p>
+            <span class='heading'>Why:</span> Because games are fun!</p>
+          <p>
+            <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
+          <p>
+            <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
+            venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
+            viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat
+            diam sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
+          <img src='https://placeimg.com/500/400/arch' alt=''>
+        </div>
+        <div class='project2'>
+          <h4>Project 2</h4>
+          <p>
+            <span class='heading'>Why:</span> A better quesiton: why not!?</p>
+          <p>
+            <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
+          <p>
+            <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
+            venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
+            viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat
+            diam sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
+          <img src='https://placeimg.com/500/400/animals' alt=''>
+        </div>
+        <div class='project3'>
+          <h4>Project 3</h4>
+          <p>
+            <span class='heading'>Why:</span> Because project 3 was xyz</p>
+          <p>
+            <span class='heading'>How:</span> React, Redux, JavaScript, d3, HTML5, CSS3</p>
+          <p>
+            <span class='heading'>Description:</span> 60 words max here Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat bibendum
+            venenatis. Quisque non sapien eu lacus eleifend aliquam in convallis turpis. Praesent commodo nulla vitae condimentum
+            viverra. Nunc venenatis tristique arcu, sit amet condimentum est pharetra aliquet. Nulla scelerisque feugiat
+            diam sed finibus. Etiam lacinia, metus nec lacinia eleifend, sapien purus commodo ipsum, in </p>
+          <img src='https://placeimg.com/500/400/nature' alt=''>
+        </div>
       </div>
+
     </main>
 
     <footer class='footer'>
