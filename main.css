@@ -142,17 +142,24 @@ footer {
     justify-self: center;
     width: 48px;
     height: 42px;
-    border: 1px solid #faffb8;
+    border: 1px solid white;
     border-radius: 2px;
-    padding: 10px 10px;
+    padding: 5px 10px;
     margin-right: 25px;
     margin-bottom: 25px;
   }
 
-  .hamburger-stripe {
-    background-color: #faffb8;
+   .line {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 45px;
     height: 3px;
-  }
+    margin-right: 25px 0;
+    background-color: white;
+    
+  } 
+
 
   .name-title {
     display: flex;
